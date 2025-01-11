@@ -17,3 +17,11 @@ html {
   font-family: "Chivo", serif;
 }
 
+.no-scrollbar{
+ scrollbar-width: none;
+
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <main className="w-full">
+    <main className="w-screen overflow-hidden  h-screen ">
       <div className="mt-4">
         <Nav />
       
