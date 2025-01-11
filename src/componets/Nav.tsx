@@ -1,5 +1,6 @@
 import { nav } from "../constraints/nav";
 import exit from "../assets/svg/material-symbols_login-sharp.svg";
+import { Link } from "react-router";
 
 const Nav = () => {
     // TODO change dead link to real link
@@ -11,7 +12,8 @@ const Nav = () => {
       <div className="text-xl font-extralight justify-self-center">
         {nav.map((data) => (
           <span key={data.label}>
-            <a href={data.href}>{data.label}</a>
+            <Link to={data.href}>{data.label}</Link>
+          
             <span>/</span>
           </span>
         ))}
