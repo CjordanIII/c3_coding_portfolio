@@ -6,8 +6,8 @@ const Nav = () => {
     // TODO change dead link to real link
   return (
     <nav className="flex gap-4 chivo w-full justify-between px-10">
-      
-        <img src="logo.svg" alt="logo" />
+        <Link to="/"> <img src="logo.svg" alt="logo" /></Link>
+       
    
       <div className="text-xl font-extralight justify-self-center">
         {nav.map((data) => (

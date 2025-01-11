@@ -1,8 +1,13 @@
-import React from 'react'
+import Line from '../componets/Line'
+
+import HeadComponetTwo from '../componets/HeadComponetTwo'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+        <HeadComponetTwo text='ABOUT'/>
+        <Line/>
+    </>
   )
 }
 

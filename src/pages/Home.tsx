@@ -1,6 +1,7 @@
 import HeadComponetOne from "../componets/HeadComponetOne";
 import SubComponetOne from "../componets/SubComponetOne";
 import arrow from "../assets/svg/prime_arrow-up.svg";
+import Line from "../componets/Line";
 const Home = () => {
   return (
     <>
@@ -27,10 +28,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="ml-12 flex items-center justify-center w-11/12">
-        <span className="text-2xl text-center mr-1 mb-1">+</span>
-        <hr className="flex-grow bg-black h-[2px] " />
-      </div>
+      <Line />
     </>
   );
 };
