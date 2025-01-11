@@ -4,6 +4,7 @@ import Nav from "./componets/Nav";
 import {Routes,Route}  from "react-router"
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import WorkTogether from "./pages/WorkTogether";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/portfolio" element={<Projects/>}/>
+          <Route path="/devonly" element={<WorkTogether/>}/>
         </Routes>
     
       </div>

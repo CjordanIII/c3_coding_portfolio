@@ -1,0 +1,1 @@
+export const paragraph:string = "I collaborate with other designers and artists to create unique digital solutions"
