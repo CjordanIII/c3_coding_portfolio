@@ -10,16 +10,17 @@ const Nav = () => {
    
       <div className="text-xl font-extralight justify-self-center">
         {nav.map((data) => (
-          <>
+          <span key={data.label}>
             <a href={data.href}>{data.label}</a>
             <span>/</span>
-          </>
+          </span>
         ))}
       </div>
       <div className="flex gap-2 ">
         <a className="flex-none self-center" href="#">SIGN IN</a>
         <img src={exit} alt="exit" />
       </div>
+      
     </nav>
   );
 };

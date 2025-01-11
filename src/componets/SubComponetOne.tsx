@@ -1,7 +1,7 @@
 
 const SubComponetOne:React.FC<{text:string}>= ({text}) => {
   return (
-    <div className="chivo text-3xl font-light">{text}</div>
+    <div className="chivo text-4xl font-light">{text}</div>
   )
 }
 

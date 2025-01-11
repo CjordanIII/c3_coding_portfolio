@@ -2,7 +2,7 @@
 
 const HeadComponetOne:React.FC<{text:string}> = ({text}) => {
   return (
-    <div className='chivo text-7xl font-bold'>{text}</div>
+    <div className='chivo text-8xl font-bold'>{text}</div>
   )
 }
 
