@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Nav from "./componets/Nav";
 import {Routes,Route}  from "react-router"
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route index element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/portfolio" element={<Projects/>}/>
         </Routes>
     
       </div>
