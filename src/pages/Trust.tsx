@@ -4,9 +4,11 @@ import HeadComponetTwo from "../componets/HeadComponetTwo";
 const Trust = () => {
   return (
     <div className="flex flex-col">
-      <HeaderOne
-        head={<HeadComponetTwo text="TRUSTED BY SUCCESSFUL ORGANIZATIONS" />}
-      />
+      <div>
+        <HeaderOne
+          head={<HeadComponetTwo text="TRUSTED BY SUCCESSFUL ORGANIZATIONS" />}
+        />
+      </div>
     </div>
   );
 };

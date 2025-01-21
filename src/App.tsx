@@ -9,7 +9,7 @@ import WorkTogether from "./pages/WorkTogether";
 function App() {
   return (
     <main className="w-screen overflow-hidden  h-screen ">
-      <div className="mt-4">
+      <div className="mt-4 w-screen h-screen">
         <Nav />
       
         <Routes>
