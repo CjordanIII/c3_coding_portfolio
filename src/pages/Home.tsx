@@ -6,13 +6,13 @@ const Home = () => {
   return (
     <>
       <div className="flex ">
-        <hr className="h-[85vh] ml-14 bg-black w-[1px] mt-10" />
-        <div className="w-full mt-36">
+        <hr className="xl:h-[85vh]  ml-14 bg-black w-[1px] mt-10" />
+        <div className="w-full xl:mt-36 mt-16" >
           <div className="flex flex-col items-center w-11/12 chivo">
             <div className="text-left w-full ml-10">
               <HeadComponetOne text="CLARENCE JORDAN" />
             </div>
-
+              {/* TODO continue here */}
             <div className="text-right">
               <HeadComponetOne text="SOFTWARE ENGINEER" />
               <sub className="text-center">

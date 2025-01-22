@@ -5,11 +5,11 @@ import { Link } from "react-router";
 const Nav = () => {
     // TODO change dead link to real link
   return (
-    <nav className="flex gap-4 chivo w-full justify-between px-10">
+    <nav className="flex xl:gap-4  chivo w-full justify-between xl:px-10">
         <Link to="/"> <img src="logo.svg" alt="logo" /></Link>
        
    
-      <div className="text-xl font-extralight justify-self-center">
+      <div className="text-xl font-extralight justify-self-center xl:block hidden">
         {nav.map((data) => (
           <span key={data.label}>
             <Link to={data.href}>{data.label}</Link>
