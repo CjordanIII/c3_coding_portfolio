@@ -12,7 +12,7 @@ const WorkTogether = () => {
           <SubComponetOne text={paragraph} />
           <span className="flex ">
             <img src={arrow} alt="arrow" />
-            <a href="#" className="self-center">
+            <a href="https://forms.gle/FW8kV8txFr8L3Dad7" className="self-center">
               REQUEST PROJECT
             </a>
           </span>

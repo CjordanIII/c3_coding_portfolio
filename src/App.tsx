@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import WorkTogether from "./pages/WorkTogether";
 import Mail from "./componets/Mail";
 import NotFound from "./pages/NotFound";
+import CommingSoon from "./pages/CommingSoon";
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
           <Route index element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/portfolio" element={<Projects/>}/>
-          <Route path="/devonly" element={<Mail/>}/>
+          <Route path="/contact" element={<Mail/>}/>
+          <Route path="/commingsoon" element={<CommingSoon/>}/>
           <Route path="*" element={<NotFound/>}/>
+
         </Routes>
     
       </div>

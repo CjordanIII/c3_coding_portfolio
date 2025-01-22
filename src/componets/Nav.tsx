@@ -19,7 +19,7 @@ const Nav = () => {
         ))}
       </div>
       <div className="flex gap-2 ">
-        <a className="flex-none self-center" href="#">SIGN IN</a>
+        <a className="flex-none self-center" href="/commingsoon">SIGN IN</a>
         <img src={exit} alt="exit" />
       </div>
       
