@@ -5,6 +5,7 @@ import {Routes,Route}  from "react-router"
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import WorkTogether from "./pages/WorkTogether";
+import Mail from "./componets/Mail";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route index element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/portfolio" element={<Projects/>}/>
-          <Route path="/devonly" element={<WorkTogether/>}/>
+          <Route path="/devonly" element={<Mail/>}/>
         </Routes>
     
       </div>
