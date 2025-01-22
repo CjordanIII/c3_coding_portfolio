@@ -1,39 +1,37 @@
-
-import {sendEmailAction} from "../actions/email.actions"
-import {useState } from "react";
+import { sendEmailAction } from "../actions/email.actions";
+import { useState } from "react";
+import Status from "./Status";
 
 const Mail = () => {
-
-
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
+  const [status, setStatus] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
-  
-    
+
     const { name, email, message } = formData;
 
     const templateParams = {
-      to_name: 'Recipient Name', // replace with actual recipient's name if known
+      to_name: "Recipient Name", // replace with actual recipient's name if known
       from_name: name,
       user_email: email,
       message: message,
     };
-  
-    sendEmailAction(templateParams);
-  
+
+    const res =  await sendEmailAction(templateParams);
+    
+    setStatus(res)
     // Reset the form inputs by updating the state
     setFormData({
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     });
   };
-  
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -47,7 +45,10 @@ const Mail = () => {
     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm/6 font-medium text-gray-900">
+          <label
+            htmlFor="name"
+            className="block text-sm/6 font-medium text-gray-900"
+          >
             Name
           </label>
           <div className="mt-2">
@@ -63,7 +64,10 @@ const Mail = () => {
           </div>
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
+          <label
+            htmlFor="email"
+            className="block text-sm/6 font-medium text-gray-900"
+          >
             Email address
           </label>
           <div className="mt-2">
@@ -81,7 +85,10 @@ const Mail = () => {
         </div>
         <div>
           <div className="flex items-center justify-between">
-            <label htmlFor="message" className="block text-sm/6 font-medium text-gray-900">
+            <label
+              htmlFor="message"
+              className="block text-sm/6 font-medium text-gray-900"
+            >
               Message
             </label>
           </div>
@@ -106,9 +113,10 @@ const Mail = () => {
             Contact Me
           </button>
         </div>
+        <Status status={status} />
       </form>
     </div>
   );
 };
 
-export default Mail
+export default Mail;
