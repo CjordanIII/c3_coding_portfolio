@@ -3,13 +3,13 @@ import exit from "../assets/svg/material-symbols_login-sharp.svg";
 import { Link } from "react-router";
 
 const Nav = () => {
-    // TODO change dead link to real link
+    
   return (
-    <nav className="flex xl:gap-4  chivo w-full justify-between xl:px-10">
-        <Link to="/"> <img src="logo.svg" alt="logo" /></Link>
+    <nav className="flex xl:gap-4  chivo w-full xl:justify-between justify-evenly xl:px-10">
+        <Link to="/" className="flex justify-center items-center"> <img src="logo.svg" className="w-full" alt="logo" /></Link>
        
    
-      <div className="text-xl font-extralight justify-self-center xl:block hidden">
+      <div className="max-md:text-sm font-extralight max-md:justify-self-center min-xl:text-xl max-md:absolute ">
         {nav.map((data) => (
           <span key={data.label}>
             <Link to={data.href}>{data.label}</Link>
