@@ -11,7 +11,7 @@ const About = () => {
       <div className="flex flex-col items-start  ">
       
         <HeaderOne head={ <HeadComponetTwo text="ABOUT" />} />
-        <div className="w-3/4 text-left pl-20">
+        <div className="w-3/4 text-left pl-20 ">
           <Text text={aboutme} />
         </div>
       </div>

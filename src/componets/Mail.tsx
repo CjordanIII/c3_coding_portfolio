@@ -42,7 +42,7 @@ const Mail = () => {
   };
 
   return (
-    <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+    <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm max-md:scale-75">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
@@ -96,8 +96,8 @@ const Mail = () => {
             <textarea
               id="message"
               name="message"
-              rows="4"
-              cols="50"
+              rows={4}
+              cols={50}
               required
               value={formData.message} // Bind input value to state
               onChange={handleChange}

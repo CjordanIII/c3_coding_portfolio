@@ -11,7 +11,7 @@ import CommingSoon from "./pages/CommingSoon";
 
 function App() {
   return (
-    <main className="w-screen overflow-hidden  h-screen ">
+    <main className="w-screen overflow-x-hidden  h-screen background">
       <div className="mt-4 w-screen h-screen">
         <Nav />
       

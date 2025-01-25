@@ -10,8 +10,15 @@ html {
   width: 100%;
   height: 100%;
   background-color: #FFFFFF;
+  background-image: url("../src/assets/background.jpg");
+  background-repeat: repeat;
 }
 
+.background{
+ 
+ 
+
+}
 
 .chivo {
   font-family: "Chivo", serif;
