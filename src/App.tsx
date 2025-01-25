@@ -8,13 +8,14 @@ import WorkTogether from "./pages/WorkTogether";
 import Mail from "./componets/Mail";
 import NotFound from "./pages/NotFound";
 import CommingSoon from "./pages/CommingSoon";
+import CJbackground from "./componets/CJbackground";
 
 function App() {
   return (
-    <main className="w-screen overflow-x-hidden  h-screen background">
+    <main className="w-screen overflow-x-hidden  h-screen background chivo">
       <div className="mt-4 w-screen h-screen">
         <Nav />
-      
+
         <Routes>
           <Route index element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
