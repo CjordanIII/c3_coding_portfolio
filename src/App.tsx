@@ -8,7 +8,7 @@ import WorkTogether from "./pages/WorkTogether";
 import Mail from "./componets/Mail";
 import NotFound from "./pages/NotFound";
 import CommingSoon from "./pages/CommingSoon";
-import CJbackground from "./componets/CJbackground";
+import Index from "./pages/Index";
 
 function App() {
   return (
@@ -17,7 +17,8 @@ function App() {
         <Nav />
 
         <Routes>
-          <Route index element={<Home/>}/>
+          <Route index element={<Index/>}/>
+          <Route path="/home" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/portfolio" element={<Projects/>}/>
           <Route path="/contact" element={<Mail/>}/>
