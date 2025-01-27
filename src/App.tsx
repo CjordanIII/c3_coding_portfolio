@@ -23,7 +23,6 @@ function App() {
           <Route path="/contact" element={<Mail/>}/>
           <Route path="/commingsoon" element={<CommingSoon/>}/>
           <Route path="*" element={<NotFound/>}/>
-
         </Routes>
     
       </div>
