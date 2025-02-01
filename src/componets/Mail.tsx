@@ -42,6 +42,7 @@ const Mail = () => {
   };
 
   return (
+ 
     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm max-md:scale-75">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -116,6 +117,7 @@ const Mail = () => {
         <Status status={status} />
       </form>
     </div>
+  
   );
 };
 

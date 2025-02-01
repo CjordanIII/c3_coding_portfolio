@@ -7,7 +7,7 @@ import HeaderOne from "../componets/HeaderOne.tsx";
 
 const About = () => {
   return (
-    <>
+    
       <div className="flex flex-col items-start  ">
       
         <HeaderOne head={ <HeadComponetTwo text="ABOUT" />} />
@@ -15,7 +15,8 @@ const About = () => {
           <Text text={aboutme} />
         </div>
       </div>
-    </>
+     
+    
   );
 };
 
