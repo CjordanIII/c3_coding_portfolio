@@ -14,7 +14,6 @@ const Home = () => {
               <div className="text-left w-full xl:ml-10 ">
                 <HeadComponetOne text="CLARENCE JORDAN" />
               </div>
-              {/* TODO continue here */}
               <div className="text-right  ">
                 <HeadComponetOne text="SOFTWARE ENGINEER" />
                 <sub className="text-center">

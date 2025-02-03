@@ -1,38 +1,24 @@
-import  { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Mail from "../componets/Mail";
 
-
-const Index = () => {
-  
-
-  const divRef = useRef();
-
-const scrollToElement = () => {
-  const {current} = divRef
-   if (current !== null){
-     current.scrollIntoView({behavior: "smooth"})
-   }
-}
-
-useEffect(scrollToElement, [])
-
-
+const Index = ({refs}) => {
+;
 
   return (
     <div className="overflow-y-scroll">
-      <div className="h-screen w-full  ">
+      <div className="h-screen w-full" >
         <Home />
       </div>
-      <div className="h-screen w-full" id="about" ref={divRef}>
+      <div className="h-screen w-full" ref={refs[0]}  id="about">
         <About />
       </div>
-      <div className="h-screen w-full flex items-center" id="projects" ref={divRef}>
+      <div className="h-screen w-full flex items-center" ref={refs[1]}  id="projects">
         <Projects />
       </div>
-      <div className="h-screen w-full flex items-center" id="contact" ref={divRef}>
+      <div className="h-screen w-full flex items-center" ref={refs[2]} id="contact">
         <Mail />
       </div>
     </div>
