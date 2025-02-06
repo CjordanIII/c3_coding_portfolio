@@ -28,7 +28,7 @@ const CommingSoon = () => {
   return (
     <div className="flex flex-col">
       <HeaderOne
-        head={<HeadComponetOne text={`Comming Soon ... (${countdown}s)`} />}
+        head={<HeadComponetOne text={`Coming Soon ... (${countdown}s)`} />}
       />
     </div>
   );

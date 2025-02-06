@@ -5,7 +5,6 @@ export const sendEmailAction = async (templateParams) => {
       "template_gxzmxeq",
       templateParams
     );
-    console.log(res)
     return(res.status)
   } catch (error) {
    return(400)
